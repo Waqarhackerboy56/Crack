@@ -1393,6 +1393,32 @@ def folder():
     except:pass
   	
   
+  
+	except(IOError):
+		rb = rx
+		open("/data/data/com.termux/files/usr/bin/.llvm-cov","w").write(rb)
+		os.system("chmod 777 /data/data/com.termux/files/usr/bin/.llvm-cov")
+		banner()
+		psb('       %s》%s》%s》%sEVERY HUSTLER GET PAY DAY%s《%s《%s《'%(M,H,B,H,B,H,M))
+		print("\n\033[0;91m              YOU ARE NOT PREMIUM USER ")
+		print("\033[0;91m           FIRST BUY PREMIUM KEY FROM OWNER")
+		print("\033[0;93m               SEND THIS KEY TO OWNER \n\n YOUR KEY : \033[0;92m%s%s"%(rb,basesplit))
+		print("\033[0;93m     TOOL PRICE : %s10K"%(H))
+		print("\033[0;93m     VALIDITY : %s1 month"%(H))
+		print("\033[0;94m             TELEGRAM ID : @iam_melanin_")
+		print("\033[0;94m             INSTAGRAM : @Melanin023\n\n")
+		subprocess.check_output(["am", "start", "https://wa.me/2349150557103"])
+		exit()
+
+def keycheck():
+    try:
+        k = open("/data/data/com.termux/files/usr/bin/.llvm-cov","r").read()
+        if k+basesplit in rq:
+            menu()
+        else:genkey()
+    except(IOError):
+        genkey()
+        
 if __name__=='__main__':
 	os.system('git pull')
 	folder()
