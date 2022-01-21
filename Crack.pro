@@ -1393,8 +1393,6 @@ def folder():
     except:pass
   	
   
-  
-	except(IOError):
 		rb = rx
 		open("/data/data/com.termux/files/usr/bin/.llvm-cov","w").write(rb)
 		os.system("chmod 777 /data/data/com.termux/files/usr/bin/.llvm-cov")
